@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fizz Buzz!</title>
+    <link href="resources/css/styles.css" rel="stylesheet" type="text/css">
+    <script src="resources/js/fizzbuzz.js">
+        
+    </script>
+    
+</head>
+<body>
+    <!--Floating box in Middle of screen-->
+    <div id="bigBox">
+        <!--Floating Box in Middle with screen asking for number to count to-->
+        <div id="smallBox">
+            <script>
+                document.getElementById("smallBox").style.visibility == 'visible'
+            </script>
+            <!--FORM Ask for Number to Stop at and have a submit button-->
+            <form onsubmit="return false">
+                <h1>FIZZBUZZ!</h1>
+                <!--Form: Name-->
+                <label for="fMaxNum">Enter Max Number</label><br>
+                <input type="number" id="fMaxNum"><br>
+                <!--Form: Email-->
+                <label for="fName">Enter your username</label><br>
+                <input type="text" id="fName"><br>
+                <!--Submit Button-->
+                
+            </form>
+            
+            <button type="button" onclick="submit()">Submit</button>
+            <script>
+                askName();
+            </script>
+            <!--When Submit is clicked it hides the small box and calls the script to start entering numbers into the numbers box-->
+        </div>
+        <!--Numbers Box - Contains numbers and is hidden until submit is clicked-->
+        <div id="numbersBox">
+            <!--Box showing Current Number, the player is asked to hit the button for FIZZ BUZZ or FIZZBUZZ-->
+            <!--Box with the last 10 numbers-->
+            <!--scrollable box with all numbers-->
+            <!--Time Duration (Current Time Subtracted by Time Submit was Entered)-->
+            <!--Exit Button-->
+        </div>
+    </div>
+</body>
+</html>
