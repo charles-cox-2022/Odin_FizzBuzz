@@ -1,2 +1,2 @@
 # Odin_FizzBuzz
- A number is requested in the HTML page, when submit is entered it displays the game results with a .5s delay between each number.
+ You enter a number and your name, then play a game of fizz buzz up to the number you entered. 
