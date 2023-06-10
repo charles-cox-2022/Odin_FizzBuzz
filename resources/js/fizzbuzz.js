@@ -5,7 +5,7 @@ let maxNumber = 0;
 
 function askName() {
     //let person = prompt("Please enter your name", "Harry Potter");
-    let person = 'Charles';
+    let person = '';
     if (person != null) {
     document.getElementById("fName").value = person;
     document.getElementById("fMaxNum").value = 50;
@@ -47,13 +47,13 @@ function startGame() {
 }
 function determineFizzBuzz() {
     if(currentNumber % 3 == 0 && currentNumber % 5 == 0){
-        return('FIZZBUZZ');
+        return('FB');
     }
     else if(currentNumber % 3 == 0){
-        return('FIZZ');
+        return('F');
     }
     else if(currentNumber % 5 == 0) {
-        return('BUZZ')
+        return('B')
     }
     else {
         return(currentNumber);
@@ -61,7 +61,7 @@ function determineFizzBuzz() {
 }
 //Function for FIZZ
 function FIZZ() {
-    if(determineFizzBuzz() == 'FIZZ'){
+    if(determineFizzBuzz() == 'F'){
         console.log("CORRECT");
         score++;
     }
@@ -69,7 +69,7 @@ function FIZZ() {
 }
 //Function for FIZZ BUZZ
 function FIZZBUZZ() {
-    if(determineFizzBuzz() == 'FIZZBUZZ'){
+    if(determineFizzBuzz() == 'FB'){
         console.log("CORRECT");
         score++;
     }
@@ -77,7 +77,7 @@ function FIZZBUZZ() {
 }
 //Function for BUZZ
 function BUZZ() {
-    if(determineFizzBuzz() == 'BUZZ'){
+    if(determineFizzBuzz() == 'B'){
         console.log("CORRECT");
         score++;
     }
@@ -93,11 +93,11 @@ function regNum() {
 }
 //Function for Reload
 function resultMsg()   {
-    if(determineFizzBuzz() == 'BUZZ') {
+    if(determineFizzBuzz() == 'B') {
         return(`${currentNumber} is divisable by 5!`)
-    } else if (determineFizzBuzz() == 'FIZZ'){
+    } else if (determineFizzBuzz() == 'F'){
         return(`${currentNumber} is divisable by 3!`)
-    } else if (determineFizzBuzz() == 'FIZZBUZZ'){
+    } else if (determineFizzBuzz() == 'FB'){
         return(`${currentNumber} is divisable by 3 and 5!`)
     } else {
         return(`${currentNumber} is not divisable by 3 or 5!`)
