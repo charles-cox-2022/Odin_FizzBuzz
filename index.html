@@ -32,7 +32,7 @@
                 
             </form>
             
-            <button type="button" onclick="submit()">Submit</button>
+            <button type="button" onclick="startGame()">Submit</button>
             <script>
                 askName();
             </script>
@@ -41,10 +41,28 @@
         <!--Numbers Box - Contains numbers and is hidden until submit is clicked-->
         <div id="numbersBox">
             <!--Box showing Current Number, the player is asked to hit the button for FIZZ BUZZ or FIZZBUZZ-->
+            <div id="currentNumbersBox">
+                <h5 id="score">Score: 0</h5>
+                <h1 id="currentNumbers">11</h1>
+                <div id="options">
+                    <button type="button" id="btnFIZZ" onclick="FIZZ()">FIZZ</button>
+                    <button type="button" id="btnBUZZ" onclick="BUZZ()">BUZZ</button>
+                    <button type="button" id="btnFIZZBUZZ" onclick="FIZZBUZZ()">FIZZ BUZZ</button>
+                    <button type="button" id="btnRegNum" onclick="regNum()">Number</button>
+                </div>
+            </div>
             <!--Box with the last 10 numbers-->
-            <!--scrollable box with all numbers-->
-            <!--Time Duration (Current Time Subtracted by Time Submit was Entered)-->
-            <!--Exit Button-->
+            <div id="lastNumbersBox">
+                <h2 id="lastNumbers">Last Numbers: 1..2..3..4..5..6..7..8..9..10</h2>
+            </div>
+            <!--Result-->
+            <div>
+                <h1 id="result" style="text-align: center;">FIZZBUZZ</h1>
+                <h2 id="resultExplain">0 is divisable by both 5 and 3!</h2>
+            </div>
+            
+            <!--Reset Button-->
+            <button type="button" onclick="window.location.reload();">Reload</button>
         </div>
     </div>
 </body>

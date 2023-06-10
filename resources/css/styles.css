@@ -21,10 +21,8 @@ body {
     min-width: 200px;
     min-height: 200px;
     background-color: azure;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     visibility: visible;
+    text-align: center;
 }
 #numbersBox {
     min-width: 80%;
@@ -33,6 +31,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     visibility: collapse;
     display:none;
+}
+#currentNumbersBox {
+    text-align: center;
 }
